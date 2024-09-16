@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beers?</title>
+    <script type="module" src="script.js"></script> <!-- Link to the external JS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+<div class="title-container">
+    <!-- Left Image (local) -->
+    <img src="guiness.png" alt="Beer image">
+
+    <!-- Title -->
+    <h1>Hungry for beers?</h1>
+
+    <!-- Right Image (local) -->
+    <img src="guiness.png" alt="Beer image">
+</div>
+
+<div class="container">
+    <label for="beer-choice">Yes or No?</label>
+    <select id="beer-choice">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <!-- Remove inline onclick -->
+    <button id="submit-answer-button">Submit</button>
+</div>
+
+<!-- Hidden name input (shown only when Yes is selected) -->
+<div id="name-section" style="display: none;">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Your Name">
+    <!-- Remove inline onclick -->
+    <button id="submit-name-button">Submit Name</button>
+</div>
+
+<!-- Display the message -->
+<div id="result-message" class="message"></div>
+
+<!-- Table to display responses -->
+<div id="response-table" style="display: none;">
+    <h3>Who's regarded</h3>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Response</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+        <!-- Rows will be added here dynamically -->
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
