@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container img {
+    width: 75px; /* Adjust the size of the image */
+    margin: 0 20px; /* Space between the image and the title */
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;   /* Makes the text all caps */
+    color: red;                  /* Sets the color to red */
+    font-weight: bold;           /* Optionally, you can make the text bold */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#name-section {
+    margin-top: 20px;
+}
+
+/* Style the container to use Flexbox and center the content */
+#response-table {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Make the container take the full viewport height */
+    flex-direction: column;   /* Ensure content flows vertically */
+}
+
+table {
+    margin: auto;  /* This is an additional safety net to ensure the table is centered */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
