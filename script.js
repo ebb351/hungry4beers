@@ -97,6 +97,22 @@ function submitName() {
 
         // Apply the "message" class for styling
         messageDiv.classList.add("message");
+
+        //play audio
+        fart.play()
+            .then(() => {
+                console.log("Audio started playing successfully.");
+            })
+            .catch(error => {
+                console.error("Error occurred while trying to play audio: ", error);
+            });
+        heySoulSister.play()
+            .then(() => {
+                console.log("Audio started playing successfully.");
+            })
+            .catch(error => {
+                console.error("Error occurred while trying to play audio: ", error);
+            });
     } else {
         alert("Please enter your name!");
     }
@@ -129,5 +145,18 @@ function submitAnswer() {
 
         // Apply the "message" class for styling
         messageDiv.classList.add("message");
+
+        fart.play()
+            .then(() => {
+                console.log("Audio started playing successfully.");
+            })
+            .catch(error => {
+                console.error("Error occurred while trying to play audio: ", error);
+            });
     }
 }
+
+//Audio on yes/no response
+const heySoulSister = new Audio('Train - Hey, Soul Sister (Lyrics).mp3');
+const fart = new Audio('Fart sound effect.mp3')
+
